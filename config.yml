@@ -4,7 +4,7 @@
 url: http://158.220.119.11:6798/write
 
 # Your nickname to see in my website
-nickname: "pythonBot"
+nickname: pythonBot
 
 # How many letters the word has
 word_length: 32

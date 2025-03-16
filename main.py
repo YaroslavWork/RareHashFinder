@@ -14,7 +14,7 @@ if CONFIG['word_length'] <= 0:
     raise Exception("The property 'word_length' should be more than 0")
 if CONFIG['min_repetitions'] <= 0:
     raise Exception("The property 'min_repetitions' should be more than 0")
-if CONFIG['nickname'] < 32:
+if len(CONFIG['nickname']) >= 32:
     raise Exception("The property 'nickname' should be lower than 32")
 
 def count_repeated_pattern_from_start(hash: str) -> int:
@@ -28,7 +28,8 @@ while True:
     text = ''.join(random.choices(string.ascii_letters + string.digits + string.punctuation, k=CONFIG['word_length']))
     hash_in_hex = hashlib.sha256(text.encode()).hexdigest()
     hash_in_binary = format(int(hash_in_hex, 16), '0>42b')
-    hash_in_binary = f"{"0" * (256-len(hash_in_binary))}{hash_in_binary}"
+    padding = "0" * (256-len(hash_in_binary))
+    hash_in_binary = f"{padding}{hash_in_binary}"
     count_from_start = count_repeated_pattern_from_start(hash_in_binary)
     max_count = count_from_start
     if max_count >= CONFIG['min_repetitions']:

@@ -14,6 +14,8 @@ if CONFIG['word_length'] <= 0:
     raise Exception("The property 'word_length' should be more than 0")
 if CONFIG['min_repetitions'] <= 0:
     raise Exception("The property 'min_repetitions' should be more than 0")
+if CONFIG['nickname'] < 32:
+    raise Exception("The property 'min_repetitions' should be lower than 32")
 
 def count_repeated_pattern_from_start(hash: str) -> int:
     sign: str = hash[0]
@@ -35,7 +37,7 @@ while True:
         data = {
             "word": text,
             "hashType": "sha256",
-            "user": "pythonHomeBot"
+            "user": CONFIG['nickname']
         }
 
         response = requests.post(CONFIG['url'], json=data)

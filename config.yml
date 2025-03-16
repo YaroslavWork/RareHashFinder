@@ -3,6 +3,9 @@
 # My site to write some rarest hashes (do not change this unless we change our domain)
 url: http://158.220.119.11:6798/write
 
+# Your nickname to see in my website
+nickname: "pythonBot"
+
 # How many letters the word has
 word_length: 32
 

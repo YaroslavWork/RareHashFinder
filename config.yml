@@ -1,0 +1,10 @@
+# Made by YAr (github: YaroslavWork)
+
+# My site to write some rarest hashes (do not change this unless we change our domain)
+url: http://158.220.119.11:6798/write
+
+# How many letters the word has
+word_length: 32
+
+# How many 0 or 1 has in the start of sequence
+min_repetitions: 25

@@ -33,7 +33,7 @@ while True:
     count_from_start = count_repeated_pattern_from_start(hash_in_binary)
     max_count = count_from_start
     if max_count >= CONFIG['min_repetitions']:
-        print(f"COUNT FROM START: {max_count};\n Text: {text};\n Hash (hex): {hash_in_hex};\n Hash (bin): {hash_in_binary}")
+        print(f"COUNT FROM START: {max_count};\nText: ----- {text} -----\nHash (hex): {hash_in_hex};\nHash (bin): {hash_in_binary}")
 
         data = {
             "word": text,

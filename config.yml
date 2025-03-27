@@ -1,7 +1,7 @@
 # Made by YAr (github: YaroslavWork)
 
 # My site to write some rarest hashes (do not change this unless we change our domain)
-url: http://158.220.119.11:6798/write
+url: https://158.220.119.11:6798/write
 
 # Your nickname to see in my website
 nickname: pythonBot
@@ -9,5 +9,8 @@ nickname: pythonBot
 # How many letters the word has
 word_length: 32
 
-# How many 0 or 1 has in the start of sequence
+# How many 0 or 1 has in the start of sequence (to save in my site number must be at least 25)
 min_repetitions: 25
+
+# In case when site is not working
+save_file: .//save.txt

@@ -1,6 +1,6 @@
 FROM python:3.13
 
-WORKDIR /rare-hashes-website
+WORKDIR /rare-hash-finder
 
 COPY requirements.txt .
 

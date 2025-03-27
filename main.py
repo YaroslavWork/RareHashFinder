@@ -1,13 +1,13 @@
 import hashlib
 import random
 import string
+
 import requests
 import yaml
-import os
 
 
 CONFIG = {}
-DEFAULT_URL = 'http://158.220.119.11:6798/write'
+DEFAULT_URL = 'https://158.220.119.11:6798/write'
 DEFAULT_NICKNAME = ''
 DEFAULT_WORD_LENGTH = 32
 DEFAULT_MIN_REPETITIONS = 25

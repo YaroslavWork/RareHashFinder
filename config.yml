@@ -14,3 +14,6 @@ min_repetitions: 25
 
 # In case when site is not working
 save_file: .//save.txt
+
+# Multiprocessing: How many (in %) cpu cores are busy
+cpu_usage: 100 #%
